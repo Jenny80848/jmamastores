@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jmama Shopping Mall</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container glass-nav rounded-4 px-4 py-2 mt-3">
+            <a class="navbar-brand gradient-text" href="index.html">JMAMA</a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#products">Groceries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#products">Wines</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#products">Fashion</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="profile.html" class="text-white"><i class="fas fa-user fa-lg"></i></a>
+                    <div class="position-relative cursor-pointer cart-trigger" onclick="toggleCart()"
+                        data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                        <i class="fas fa-shopping-bag fa-xl text-white"></i>
+                        <span id="cart-count"
+                            class="badge rounded-circle bg-warning position-absolute top-0 start-100 translate-middle">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header d-flex align-items-center justify-content-center position-relative"
+        style="height: 40vh; padding-top: 100px;">
+        <div class="container text-center" data-aos="zoom-in">
+            <h1 class="display-3 fw-bold mb-3 gradient-text">GET IN TOUCH</h1>
+            <p class="lead text-white-50">We'd love to hear from you.</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="py-5 position-relative z-index-1">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="glass-card p-4 h-100 text-white">
+                        <h3 class="fw-bold mb-4">Contact Information</h3>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="social-link bg-primary text-white" style="width: 50px; height: 50px;">
+                                    <i class="fas fa-map-marker-alt fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="fw-bold">Our Location</h5>
+                                <p class="text-white-50">Jmama Shopping Mall, Jikwoyi, Abuja, Nigeria.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="social-link bg-success text-white" style="width: 50px; height: 50px;">
+                                    <i class="fas fa-phone fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="fw-bold">Phone Number</h5>
+                                <p class="text-white-50">+234 812 539 2542 <br> +234 800 JMAMA 00</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="social-link bg-warning text-white" style="width: 50px; height: 50px;">
+                                    <i class="fas fa-envelope fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="fw-bold">Email Address</h5>
+                                <p class="text-white-50">hello@jmamaplus.com <br> support@jmamaplus.com</p>
+                            </div>
+                        </div>
+
+                        <hr class="border-secondary my-4">
+
+                        <h5 class="fw-bold mb-3">Follow Us</h5>
+                        <div class="d-flex">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="glass-card p-4 p-md-5">
+                        <h3 class="fw-bold text-white mb-4">Send us a Message</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text"
+                                            class="form-control bg-transparent text-white border-secondary" id="name"
+                                            placeholder="Your Name" style="backdrop-filter: blur(5px);">
+                                        <label for="name" class="text-white-50">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email"
+                                            class="form-control bg-transparent text-white border-secondary" id="email"
+                                            placeholder="Your Email" style="backdrop-filter: blur(5px);">
+                                        <label for="email" class="text-white-50">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text"
+                                            class="form-control bg-transparent text-white border-secondary" id="subject"
+                                            placeholder="Subject" style="backdrop-filter: blur(5px);">
+                                        <label for="subject" class="text-white-50">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-transparent text-white border-secondary"
+                                            placeholder="Leave a message here" id="message"
+                                            style="height: 150px; backdrop-filter: blur(5px);"></textarea>
+                                        <label for="message" class="text-white-50">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-glow w-100 py-3" type="submit">SEND MESSAGE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="row mt-5" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="glass-card p-2">
+                        <div class="bg-dark rounded-4 d-flex align-items-center justify-content-center"
+                            style="height: 400px; background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+                            <div class="glass-card p-4 text-center">
+                                <h4 class="text-white fw-bold mb-0">Find Us on Google Maps</h4>
+                                <p class="text-white-50 mb-0">Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end glass-offcanvas" tabindex="-1" id="cartOffcanvas">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title text-white font-heading">Your Cart</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <div id="cart-items" class="flex-grow-1 overflow-auto custom-scrollbar">
+                <p class="text-center text-white-50 mt-5">Your cart is empty.</p>
+            </div>
+            <div class="glass-summmary p-3 rounded-3 mt-3">
+                <div class="d-flex justify-content-between mb-3 text-white">
+                    <span class="fw-light">Total</span>
+                    <span class="fw-bold fs-4" id="cart-total">₦0.00</span>
+                </div>
+                <a href="cart.html" class="btn btn-glow w-100 fw-bold">VIEW CART & CHECKOUT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5 glass-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h2 class="gradient-text fw-bold mb-3">JMAMA</h2>
+                    <p class="text-white-50">Standard Shopping Mall. We provide premium quality groceries, wines,
+                        perfumes, and more. Quality you can trust in Jikwoyi, Abuja.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Departments</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html#products">Groceries</a></li>
+                        <li><a href="index.html#products">Wines & Drinks</a></li>
+                        <li><a href="index.html#products">Perfumes</a></li>
+                        <li><a href="index.html#products">Fashion</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="text-white-50"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Jikwoyi,
+                            Abuja, Nigeria</li>
+                        <li class="text-white-50"><i class="fas fa-phone me-2 text-warning"></i> +234 812 539 2542</li>
+                        <li class="text-white-50"><i class="fas fa-envelope me-2 text-warning"></i> hello@jmamaplus.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms & Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-4 mt-4 text-center">
+                <p class="text-white-50 mb-0 small">&copy; 2026 Jmama Shopping Mall. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
